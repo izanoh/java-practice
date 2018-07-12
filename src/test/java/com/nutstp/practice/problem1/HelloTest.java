@@ -12,5 +12,12 @@ public class HelloTest {
 		String actualResult = hello.getName("nut");
 		assertEquals("should_be_say_hello_nut", "hello nut", actualResult);
 	}
+	
+	@Test
+	public void input_test_should_be_say_hello_test(){
+		Hello hello = new Hello();
+		String actualResult = hello.getName("test");
+		assertEquals("should_be_say_hello_test", "hello test", actualResult);
+	}
 
 }
